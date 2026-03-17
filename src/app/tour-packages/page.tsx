@@ -16,7 +16,7 @@ export default function TourPackagesPage() {
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-emerald-950/70 z-10" />
                     <img
-                        src="https://images.unsplash.com/photo-1544490809-b68a8677aebb?q=80&w=2070&auto=format&fit=crop"
+                        src="/imagegaller/mamun-srizon-d_1fsESCexI-unsplash.jpg"
                         alt="Sundarban Tours"
                         className="w-full h-full object-cover"
                     />

@@ -13,7 +13,7 @@ const blogPosts = [
         excerpt: "From misty mornings perfect for photography to the highest chances of spotting the elusive Royal Bengal Tiger basking in the sun on the muddy banks.",
         date: "Dec 12, 2025",
         author: "Arunava Chatterjee",
-        image: "https://images.unsplash.com/photo-1544490809-b68a8677aebb?q=80&w=2070&auto=format&fit=crop",
+        image: "/imagegaller/andibreit-tiger-2535888_1280.jpg",
         category: "Travel Guide"
     },
     {
@@ -22,7 +22,7 @@ const blogPosts = [
         excerpt: "The Sundarbans is not just a forest; it's a dynamic, breathing barrier that protects the mainland from cyclones. Learn how these unique trees survive in saltwater.",
         date: "Nov 28, 2025",
         author: "Dr. Sen",
-        image: "https://images.unsplash.com/photo-1590616149419-faaaab83ed41?q=80&w=2070&auto=format&fit=crop",
+        image: "/imagegaller/mamun-srizon-qay3lNDSHzc-unsplash.jpg",
         category: "Conservation"
     },
     {
@@ -31,7 +31,7 @@ const blogPosts = [
         excerpt: "What lenses to pack, how to handle the humidity, and the best watchtowers for capturing endemic bird species and crocodiles.",
         date: "Oct 15, 2025",
         author: "Priya Sharma",
-        image: "https://plus.unsplash.com/premium_photo-1661962369677-fcb69ad3123b?q=80&w=2070&auto=format&fit=crop",
+        image: "/imagegaller/ashique-anan-abir-saEnr4oJ950-unsplash.jpg",
         category: "Photography"
     },
     {
@@ -40,7 +40,7 @@ const blogPosts = [
         excerpt: "Before entering the deep forest, honey collectors and fishermen pray to Bonbibi. Discover the fascinating folklore that unites communities across the delta.",
         date: "Sep 02, 2025",
         author: "Local Voice",
-        image: "https://images.unsplash.com/photo-1596489399436-b78ee741639f?q=80&w=2070&auto=format&fit=crop",
+        image: "/imagegaller/sohan-rahat-CvZ2MQu5_wY-unsplash.jpg",
         category: "Culture"
     }
 ];

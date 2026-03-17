@@ -36,7 +36,7 @@ export default function AboutPage() {
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-emerald-950/80 z-10" />
                     <img
-                        src="https://images.unsplash.com/photo-1596489399436-b78ee741639f?q=80&w=2070&auto=format&fit=crop"
+                        src="/imagegaller/rashedul-islam-hridoy-bJ8UN0MxCL4-unsplash.jpg"
                         alt="Sundarban Locals"
                         className="w-full h-full object-cover"
                     />
@@ -58,7 +58,7 @@ export default function AboutPage() {
                         <div className="w-full lg:w-1/2">
                             <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-square lg:aspect-[4/5]">
                                 <img
-                                    src="https://images.unsplash.com/photo-1544490809-b68a8677aebb?q=80&w=2070&auto=format&fit=crop"
+                                    src="/imagegaller/unkknown-traveller-l2-gRPhph60-unsplash.jpg"
                                     alt="Founder in Sundarban"
                                     className="absolute inset-0 w-full h-full object-cover"
                                 />

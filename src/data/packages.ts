@@ -27,7 +27,7 @@ export const tourPackages: TourPackage[] = [
         duration: "3 Days / 2 Nights",
         basePrice: 5999,
         discountedPrice: 4999,
-        image: "https://images.unsplash.com/photo-1544490809-b68a8677aebb?q=80&w=2070&auto=format&fit=crop",
+        image: "/imagegaller/mamun-srizon-qay3lNDSHzc-unsplash.jpg",
         shortDescription: "Our most popular package offering a comprehensive tour of the mangrove forest, watchtowers, and local islands.",
         isPopular: true,
         inclusions: [
@@ -82,7 +82,7 @@ export const tourPackages: TourPackage[] = [
         duration: "1 Day",
         basePrice: 2499,
         discountedPrice: 1999,
-        image: "https://images.unsplash.com/photo-1582695507963-4ee9143ddec5?q=80&w=2070&auto=format&fit=crop",
+        image: "/imagegaller/mamun-srizon-v6A4nXxqkFo-unsplash.jpg",
         shortDescription: "Short on time? Experience the essence of Sundarbans with this packed one-day excursion.",
         inclusions: [
             "Transport from Canning Station",
@@ -115,7 +115,7 @@ export const tourPackages: TourPackage[] = [
         duration: "3 Days / 2 Nights",
         basePrice: 8999,
         discountedPrice: 7499,
-        image: "https://images.unsplash.com/photo-1621646039564-9f89fe20dfb9?q=80&w=2070&auto=format&fit=crop",
+        image: "/imagegaller/ashique-anan-abir-saEnr4oJ950-unsplash.jpg",
         shortDescription: "Experience the wild in absolute comfort. AC transports, premium resorts, and exclusive boat cabins.",
         inclusions: [
             "AC Transport from Kolkata",
@@ -166,7 +166,7 @@ export const tourPackages: TourPackage[] = [
         duration: "2 Days / 1 Night",
         basePrice: 3999,
         discountedPrice: 3499,
-        image: "https://images.unsplash.com/photo-1542640244-7e672d6cb466?q=80&w=2070&auto=format&fit=crop",
+        image: "/imagegaller/maitheli-maitra-nZ2cEh8Qzcg-unsplash.jpg",
         shortDescription: "An educational journey designed for students and nature enthusiasts focusing on ecosystem conservation.",
         inclusions: [
             "Educational materials",
@@ -205,7 +205,7 @@ export const tourPackages: TourPackage[] = [
         duration: "3 Days / 2 Nights",
         basePrice: 6499,
         discountedPrice: 5499,
-        image: "https://images.unsplash.com/photo-1534062143496-e1e35e985869?q=80&w=2070&auto=format&fit=crop",
+        image: "/imagegaller/md-arafat-ul-alam-KNJdjEdfa-g-unsplash.jpg",
         shortDescription: "A safe, empowering, and culturally immersive experience exclusively for women travelers, led by female guides.",
         inclusions: [
             "Female guide and female resort staff where possible",
@@ -252,7 +252,7 @@ export const tourPackages: TourPackage[] = [
         duration: "4 Days / 3 Nights",
         basePrice: 12999,
         discountedPrice: 10999,
-        image: "https://images.unsplash.com/photo-1549608276-5786777e6587?q=80&w=2070&auto=format&fit=crop",
+        image: "/imagegaller/shourav-chowdhury-FzLRR5MZ5k0-unsplash.jpg",
         shortDescription: "Optimized for photographers. We chase the light, wait at prime locations, and provide custom boats.",
         inclusions: [
             "Permits for professional cameras",
