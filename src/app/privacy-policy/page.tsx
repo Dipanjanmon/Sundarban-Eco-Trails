@@ -82,8 +82,8 @@ export default function PrivacyPolicyPage() {
                         <h2 className="text-2xl font-bold text-slate-900 font-display">7. Contact Us</h2>
                         <p>
                             If you have any questions about this privacy policy or our privacy practices, please contact us at: <br/>
-                            <strong>Email:</strong> privacy@sundarbanecotrails.com <br/>
-                            <strong>Phone:</strong> +91 97321 44521
+                            <strong>Email:</strong> SundarbanEcoTrails@gmail.com <br/>
+                            <strong>Phone:</strong> +91 6289 056 302
                         </p>
                     </div>
 

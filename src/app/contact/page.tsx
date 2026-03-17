@@ -48,11 +48,19 @@ export default function ContactPage() {
                                         <div className="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center shrink-0">
                                             <MapPin className="w-6 h-6" />
                                         </div>
-                                        <div>
-                                            <h4 className="font-bold text-slate-900 mb-1">Office Location</h4>
-                                            <p className="text-slate-600 leading-relaxed text-sm">
-                                                Sundarban Gateway, Godhkhali Ferry Ghat, South 24 Parganas, West Bengal 743329
-                                            </p>
+                                        <div className="space-y-4">
+                                            <div>
+                                                <h4 className="font-bold text-slate-900 mb-1">Sundarban Office</h4>
+                                                <p className="text-slate-600 leading-relaxed text-sm">
+                                                    Rangabelia, Gosaba, <br />South 24 Paraganas, West Bengal 743370
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <h4 className="font-bold text-slate-900 mb-1">Kolkata Office</h4>
+                                                <p className="text-slate-600 leading-relaxed text-sm">
+                                                    Badu Road, opposite NSG Hub, <br />Madhyamgram, Kolkata, West Bengal 700155
+                                                </p>
+                                            </div>
                                         </div>
                                     </li>
 
@@ -77,7 +85,7 @@ export default function ContactPage() {
                                         <div>
                                             <h4 className="font-bold text-slate-900 mb-1">Email Address</h4>
                                             <p className="text-slate-600 text-sm overflow-hidden text-ellipsis">
-                                                <a href="mailto:booking@sundarbanecotrails.com" className="hover:text-emerald-600 transition-colors">booking@sundarbanecotrails.com</a>
+                                                <a href="mailto:SundarbanEcoTrails@gmail.com" className="hover:text-emerald-600 transition-colors">SundarbanEcoTrails@gmail.com</a>
                                             </p>
                                         </div>
                                     </li>

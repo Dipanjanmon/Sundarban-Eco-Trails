@@ -86,7 +86,7 @@ export default function TermsOfServicePage() {
                         <h2 className="text-2xl font-bold text-slate-900 font-display">7. Contact Information</h2>
                         <p>
                             If you have specific questions about these terms before booking, please reach out to us: <br/>
-                            <strong>Email:</strong> legal@sundarbanecotrails.com <br/>
+                            <strong>Email:</strong> SundarbanEcoTrails@gmail.com <br/>
                         </p>
                     </div>
 
