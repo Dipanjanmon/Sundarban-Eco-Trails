@@ -1,6 +1,17 @@
+"use client";
+
+import { useState } from "react";
 import { galleryImages } from "@/data/gallery";
+import GalleryGrid from "@/components/ui/GalleryGrid";
+import Link from "next/link";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 export default function GallerySection() {
+    const [showAll, setShowAll] = useState(false);
+    
+    // Only show the first 4 images initially (which will fill the top row/grid decently well on mobile and desktop)
+    const displayedImages = showAll ? galleryImages : galleryImages.slice(0, 4);
+
     return (
         <section className="py-24 bg-slate-950 text-white relative border-t border-slate-900">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,37 +28,34 @@ export default function GallerySection() {
                             Explore the raw, unfiltered beauty of the mangrove forests. Captured by our guests and expert naturalists.
                         </p>
                     </div>
-                    <div>
-                        <a
-                            href="/gallery"
-                            className="inline-flex items-center justify-center bg-white text-slate-950 font-bold py-4 px-8 rounded-full hover:bg-emerald-500 hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(16,185,129,0.4)]"
-                        >
-                            View Full Gallery
-                        </a>
-                    </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:auto-rows-[250px] lg:auto-rows-[300px]">
-                    {galleryImages.map((img, index) => (
-                        <div
-                            key={index}
-                            className={`group relative overflow-hidden rounded-3xl bg-slate-800 ${img.span} animate-in fade-in slide-in-from-bottom-8 duration-700 fill-mode-both`}
-                            style={{ animationDelay: `${index * 100}ms` }}
-                        >
-                            <img
-                                src={img.src}
-                                alt={img.alt}
-                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-80 group-hover:opacity-100"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500"></div>
-                            <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                <span className="text-white font-display font-bold text-xl md:text-2xl tracking-wide drop-shadow-lg">{img.alt}</span>
-                                <span className="text-emerald-400 text-sm font-medium mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-                                    Explore Nature &rarr;
-                                </span>
-                            </div>
-                        </div>
-                    ))}
+                <div className="mb-12">
+                    <GalleryGrid images={displayedImages} />
+                </div>
+
+                <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <button
+                        onClick={() => setShowAll(!showAll)}
+                        className="inline-flex items-center gap-2 justify-center bg-transparent border-2 border-emerald-500 text-emerald-400 font-bold py-3 px-8 rounded-full hover:bg-emerald-500 hover:text-white transition-all duration-300 btn-premium"
+                    >
+                        {showAll ? (
+                            <>
+                                Show Less <ChevronUp className="w-4 h-4" />
+                            </>
+                        ) : (
+                            <>
+                                See More Images <ChevronDown className="w-4 h-4" />
+                            </>
+                        )}
+                    </button>
+                    
+                    <Link
+                        href="/gallery"
+                        className="inline-flex items-center justify-center bg-white text-slate-950 font-bold py-3 px-8 rounded-full hover:bg-emerald-500 hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(16,185,129,0.4)] btn-premium"
+                    >
+                        View Full Gallery
+                    </Link>
                 </div>
             </div>
         </section>

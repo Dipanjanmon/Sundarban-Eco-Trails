@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Clock, CheckCircle2 } from "lucide-react";
 import { TourPackage } from "@/data/packages";
 
@@ -24,10 +25,12 @@ export default function TourCard({ pkg }: TourCardProps) {
                     <Clock className="w-4 h-4 text-emerald-600" />
                     {pkg.duration}
                 </div>
-                <img
+                <Image
                     src={pkg.image}
                     alt={pkg.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
             </div>
@@ -69,7 +72,7 @@ export default function TourCard({ pkg }: TourCardProps) {
                 <div className="grid grid-cols-2 gap-3 mt-auto">
                     <Link
                         href={`/tour-packages/${pkg.slug}`}
-                        className="flex items-center justify-center bg-emerald-50 text-emerald-700 font-semibold py-3 rounded-xl hover:bg-emerald-100 transition-colors"
+                        className="flex items-center justify-center bg-emerald-50 text-emerald-700 font-semibold py-3 rounded-xl hover:bg-emerald-100 transition-colors btn-premium"
                     >
                         View Details
                     </Link>
@@ -77,7 +80,7 @@ export default function TourCard({ pkg }: TourCardProps) {
                         href={whatsappUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center bg-emerald-600 text-white font-semibold py-3 rounded-xl shadow-md hover:bg-emerald-500 hover:shadow-lg transition-all"
+                        className="flex items-center justify-center bg-emerald-600 text-white font-semibold py-3 rounded-xl shadow-[0_0_15px_rgba(16,185,129,0.2)] hover:bg-emerald-500 hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] transition-all btn-premium"
                     >
                         Book Now
                     </a>

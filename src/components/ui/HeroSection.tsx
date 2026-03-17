@@ -1,7 +1,9 @@
 "use client";
 
-import { Play, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const heroMedia = [
     { type: 'image', src: "https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2" },
@@ -67,10 +69,12 @@ export default function HeroSection() {
                     {heroMedia.map((media, index) => (
                         <div key={index} className="w-full h-full flex-shrink-0 relative">
                             {media.type === 'image' ? (
-                                <img
+                                <Image
                                     src={media.src}
-                                    alt="Sundarban Mangrove Forest"
-                                    className={`w-full h-full object-cover transition-transform duration-[10000ms] ease-linear ${index === currentImageIndex ? "scale-110" : "scale-100"
+                                    alt={`Sundarban Preview ${index + 1}`}
+                                    fill
+                                    priority={index === 0}
+                                    className={`object-cover transition-transform duration-[10000ms] ease-linear opacity-60 ${index === currentImageIndex ? "scale-110" : "scale-100"
                                         }`}
                                 />
                             ) : (
@@ -109,22 +113,19 @@ export default function HeroSection() {
                     Experience the untamed beauty of the world&apos;s largest mangrove forest. Spot the Royal Bengal Tiger in its natural habitat with our expert-guided eco-tours.
                 </p>
 
-                <div className="flex flex-col sm:flex-row items-center gap-6 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-300">
-                    <a
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-in fade-in slide-in-from-bottom-8 duration-700 delay-300">
+                    <Link
                         href="/tour-packages"
-                        className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:shadow-[0_0_40px_rgba(16,185,129,0.5)] hover:-translate-y-1 w-full sm:w-auto"
+                        className="inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-full font-bold text-lg shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:shadow-[0_0_30px_rgba(16,185,129,0.7)] btn-premium"
                     >
                         Explore Packages
-                    </a>
-                    <button
-                        onClick={() => setIsVideoModalOpen(true)}
-                        className="flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all w-full sm:w-auto group"
+                    </Link>
+                    <Link
+                        href="/contact"
+                        className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-bold text-lg btn-premium"
                     >
-                        <div className="w-8 h-8 rounded-full bg-white text-emerald-950 flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <Play className="w-4 h-4 ml-1" />
-                        </div>
-                        Watch Tour
-                    </button>
+                        Contact Us
+                    </Link>
                 </div>
             </div>
 

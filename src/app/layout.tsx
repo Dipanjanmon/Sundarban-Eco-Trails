@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
-
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -31,7 +30,7 @@ export default function RootLayout({
         className={`${inter.variable} ${outfit.variable} font-sans antialiased text-slate-800 bg-slate-50 relative overflow-x-hidden`}
       >
         <Header />
-        <main className="min-h-screen">
+        <main className="min-h-screen page-transition bg-slate-50">
           {children}
         </main>
         <Footer />
