@@ -12,8 +12,9 @@ export function generateStaticParams() {
 }
 
 // Dynamic metadata generation for SEO
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-    const pkg = getPackageBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+    const { slug } = await params;
+    const pkg = getPackageBySlug(slug);
     if (!pkg) return {};
 
     return {
@@ -22,8 +23,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     };
 }
 
-export default function PackageDetail({ params }: { params: { slug: string } }) {
-    const pkg = getPackageBySlug(params.slug);
+export default async function PackageDetail({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const pkg = getPackageBySlug(slug);
 
     if (!pkg) {
         notFound();
