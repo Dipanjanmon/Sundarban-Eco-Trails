@@ -17,28 +17,28 @@ const activities: Activity[] = [
         title: "Boat Safari",
         icon: Ship,
         description: "Navigate the intricate network of tidal waterways. Our sturdy, custom-built boats offer the perfect vantage point for spotting wildlife, including the elusive Royal Bengal Tiger, crocodiles, and diverse bird species.",
-        image: "https://images.pexels.com/photos/257850/pexels-photo-257850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image: "/imagegaller/mamun-srizon-mNVk2uupXs0-unsplash.jpg"
     },
     {
         id: "photography",
         title: "Photography",
         icon: Camera,
         description: "Capture the golden hour over the mangrove canopy. Our specialized photography tours position you perfectly for stunning landscape and wildlife shots, guided by experts who understand the local light and animal behavior.",
-        image: "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image: "/imagegaller/ashique-anan-abir-saEnr4oJ950-unsplash.jpg"
     },
     {
         id: "nature-walk",
         title: "Nature Walks",
         icon: Footprints,
         description: "Step off the boat and explore the protected watchtower areas. Experience the unique flora of the mangrove ecosystem up close and learn about the medicinal properties of local plants from our indigenous guides.",
-        image: "https://images.pexels.com/photos/1666012/pexels-photo-1666012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image: "/imagegaller/shourav-chowdhury-FzLRR5MZ5k0-unsplash.jpg"
     },
     {
         id: "culture",
         title: "Local Culture",
         icon: Tent,
         description: "Engage with the resilient communities of the Sundarbans. Witness traditional tribal dances, visit local villages, and understand the deep connection between the people and the forest they call home.",
-        image: "https://images.pexels.com/photos/105809/pexels-photo-105809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image: "/imagegaller/md-arafat-ul-alam-KNJdjEdfa-g-unsplash.jpg"
     }
 ];
 

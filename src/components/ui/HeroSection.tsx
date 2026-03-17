@@ -6,10 +6,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 const heroMedia = [
-    { type: 'image', src: "https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2" },
-    { type: 'image', src: "https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2" },
-    { type: 'image', src: "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2" },
-    { type: 'image', src: "https://images.pexels.com/photos/105809/pexels-photo-105809.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2" },
+    { type: 'image', src: "/imagegaller/ashraful-islam--Q601r_xlfQ-unsplash.jpg" },
+    { type: 'image', src: "/imagegaller/imran-molla-xOu88dJcwPM-unsplash.jpg" },
+    { type: 'image', src: "/imagegaller/timothy-k-1CiE1x4dHIY-unsplash.jpg" },
+    { type: 'image', src: "/imagegaller/maitheli-maitra-nZ2cEh8Qzcg-unsplash.jpg" },
 ];
 
 const typingPhrases = [

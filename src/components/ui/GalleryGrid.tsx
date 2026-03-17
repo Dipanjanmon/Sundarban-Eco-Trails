@@ -7,7 +7,6 @@ import { X, ChevronLeft, ChevronRight, Eye } from "lucide-react";
 
 interface ImageProps {
     src: string;
-    span: string;
     alt: string;
 }
 
