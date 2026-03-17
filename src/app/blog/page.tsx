@@ -6,44 +6,8 @@ export const metadata: Metadata = {
     description: "Read stories, wildlife tips, and travel guides about exploring the Sundarbans mangrove forest.",
 };
 
-const blogPosts = [
-    {
-        id: 1,
-        title: "5 Reasons Why Winter is the Best Time to Visit the Sundarbans",
-        excerpt: "From misty mornings perfect for photography to the highest chances of spotting the elusive Royal Bengal Tiger basking in the sun on the muddy banks.",
-        date: "Dec 12, 2025",
-        author: "Arunava Chatterjee",
-        image: "/imagegaller/andibreit-tiger-2535888_1280.jpg",
-        category: "Travel Guide"
-    },
-    {
-        id: 2,
-        title: "Understanding the Mangrove Ecosystem",
-        excerpt: "The Sundarbans is not just a forest; it's a dynamic, breathing barrier that protects the mainland from cyclones. Learn how these unique trees survive in saltwater.",
-        date: "Nov 28, 2025",
-        author: "Dr. Sen",
-        image: "/imagegaller/mamun-srizon-qay3lNDSHzc-unsplash.jpg",
-        category: "Conservation"
-    },
-    {
-        id: 3,
-        title: "A Photographer's Guide to the Sundarbans",
-        excerpt: "What lenses to pack, how to handle the humidity, and the best watchtowers for capturing endemic bird species and crocodiles.",
-        date: "Oct 15, 2025",
-        author: "Priya Sharma",
-        image: "/imagegaller/ashique-anan-abir-saEnr4oJ950-unsplash.jpg",
-        category: "Photography"
-    },
-    {
-        id: 4,
-        title: "The Legend of Bonbibi: Guardian of the Forest",
-        excerpt: "Before entering the deep forest, honey collectors and fishermen pray to Bonbibi. Discover the fascinating folklore that unites communities across the delta.",
-        date: "Sep 02, 2025",
-        author: "Local Voice",
-        image: "/imagegaller/sohan-rahat-CvZ2MQu5_wY-unsplash.jpg",
-        category: "Culture"
-    }
-];
+import Link from "next/link";
+import { blogPosts } from "@/data/blogs";
 
 export default function BlogPage() {
     return (
@@ -71,17 +35,19 @@ export default function BlogPage() {
                                 style={{ animationDelay: `${index * 150}ms` }}
                             >
                                 <div className="relative h-64 overflow-hidden">
-                                    <div className="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur-md text-emerald-700 text-xs font-bold uppercase tracking-wider py-1.5 px-3 rounded-full shadow-sm">
-                                        {post.category}
-                                    </div>
-                                    <img
-                                        src={post.image}
-                                        alt={post.title}
-                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                    />
-                                </div>
-
-                                <div className="p-8 flex flex-col flex-grow">
+                                     <div className="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur-md text-emerald-700 text-xs font-bold uppercase tracking-wider py-1.5 px-3 rounded-full shadow-sm">
+                                         {post.category}
+                                     </div>
+                                     <Link href={`/blog/${post.id}`}>
+                                        <img
+                                            src={post.image}
+                                            alt={post.title}
+                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                        />
+                                     </Link>
+                                 </div>
+ 
+                                 <div className="p-8 flex flex-col flex-grow">
                                     <div className="flex items-center gap-4 text-xs font-medium text-slate-500 mb-4">
                                         <span className="flex items-center gap-1.5">
                                             <Calendar className="w-3.5 h-3.5" />
@@ -93,18 +59,20 @@ export default function BlogPage() {
                                         </span>
                                     </div>
 
-                                    <h2 className="text-2xl font-bold text-slate-900 mb-4 font-display group-hover:text-emerald-700 transition-colors line-clamp-2">
-                                        {post.title}
-                                    </h2>
+                                    <Link href={`/blog/${post.id}`} className="group-hover:text-emerald-700 transition-colors">
+                                        <h2 className="text-2xl font-bold text-slate-900 mb-4 font-display line-clamp-2">
+                                            {post.title}
+                                        </h2>
+                                    </Link>
 
                                     <p className="text-slate-600 leading-relaxed mb-8 flex-grow line-clamp-3">
                                         {post.excerpt}
                                     </p>
 
-                                    <a href="#" className="inline-flex items-center gap-2 text-emerald-600 font-semibold group/link mt-auto">
+                                    <Link href={`/blog/${post.id}`} className="inline-flex items-center gap-2 text-emerald-600 font-semibold group/link mt-auto">
                                         Read Article
                                         <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </article>
                         ))}
