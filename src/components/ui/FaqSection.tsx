@@ -42,7 +42,7 @@ export default function FaqSection() {
                                 <p className="text-emerald-200 text-sm md:text-base">Chat directly with our naturalist team on WhatsApp.</p>
                             </div>
                             <a
-                                href="https://wa.me/916289056302"
+                                href="https://wa.me/919641517945"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="whitespace-nowrap inline-flex items-center justify-center bg-emerald-500 text-white font-bold py-3 px-6 rounded-xl hover:bg-emerald-400 transition-colors shadow-lg"

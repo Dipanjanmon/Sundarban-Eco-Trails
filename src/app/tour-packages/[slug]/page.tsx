@@ -32,7 +32,7 @@ export default async function PackageDetail({ params }: { params: Promise<{ slug
     }
 
     const whatsappMsg = encodeURIComponent(`Hello, I am interested in booking the ${pkg.title} (${pkg.duration}).`);
-    const whatsappUrl = `https://wa.me/916289056302?text=${whatsappMsg}`;
+    const whatsappUrl = `https://wa.me/919641517945?text=${whatsappMsg}`;
 
     // JSON-LD Product Schema for SEO
     const jsonLd = {

@@ -52,7 +52,7 @@ export default function MapSection() {
                             </div>
                             <div>
                                 <h4 className="text-white font-bold text-lg mb-1">Call Us</h4>
-                                <p className="text-slate-400 text-sm leading-relaxed">+91 6289 056 302</p>
+                                <p className="text-slate-400 text-sm leading-relaxed">+91 96415 17945</p>
                             </div>
                         </div>
 

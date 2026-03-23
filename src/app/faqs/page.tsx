@@ -47,7 +47,7 @@ export default function FaqsPage() {
                         <h3 className="text-2xl font-bold text-slate-900 mb-4 font-display">Still have questions?</h3>
                         <p className="text-slate-600 mb-8">Our expert team is always ready to help you plan your perfect trip.</p>
                         <a
-                            href="https://wa.me/916289056302?text=Hello,%20I%20have%20a%20query%20about%20your%20tours."
+                            href="https://wa.me/919641517945?text=Hello,%20I%20have%20a%20query%20about%20your%20tours."
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center justify-center bg-emerald-600 text-white font-bold py-4 px-8 rounded-full shadow-md hover:bg-emerald-500 hover:-translate-y-1 transition-all text-lg"

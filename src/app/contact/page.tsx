@@ -52,13 +52,13 @@ export default function ContactPage() {
                                             <div>
                                                 <h4 className="font-bold text-slate-900 mb-1">Sundarban Office</h4>
                                                 <p className="text-slate-600 leading-relaxed text-sm">
-                                                    Rangabelia, Gosaba, <br />South 24 Paraganas, West Bengal 743370
+                                                    Village: Birajnagar, Post Office: Bijoynagar, Dist: South 24 Pgs, Near By- Bijoynagar Adarsha Vidyamandir (H.S), Pin - 743370, West Bengal, India. <br /> Regd. Address:- Birajnagar, South 24 Paraganas, West Bengal-743370, Gosaba, India, 743370
                                                 </p>
                                             </div>
                                             <div>
                                                 <h4 className="font-bold text-slate-900 mb-1">Kolkata Office</h4>
                                                 <p className="text-slate-600 leading-relaxed text-sm">
-                                                    Badu Road, opposite NSG Hub, <br />Madhyamgram, Kolkata, West Bengal 700155
+                                                    Sonarpur Station Road, Kamrabad, <br />Narendrapur, Kolkata, West Bengal 700150
                                                 </p>
                                             </div>
                                         </div>
@@ -71,7 +71,7 @@ export default function ContactPage() {
                                         <div>
                                             <h4 className="font-bold text-slate-900 mb-1">Phone Number</h4>
                                             <p className="text-slate-600 text-sm">
-                                                <a href="tel:+916289056302" className="hover:text-emerald-600 transition-colors">+91 6289 056 302</a>
+                                                <a href="tel:+919641517945" className="hover:text-emerald-600 transition-colors">+91 96415 17945</a>
                                                 <br />
                                                 <span className="text-xs text-slate-400 font-medium">Available on WhatsApp</span>
                                             </p>

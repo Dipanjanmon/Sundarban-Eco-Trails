@@ -9,7 +9,7 @@ export function FaqAccordion({ items }: { items: { question: string; answer: str
                             <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                         </span>
                     </summary>
-                    <div className="px-4 sm:px-6 pb-4 sm:pb-6 text-sm sm:text-base text-slate-600 leading-relaxed text-balance border-t border-slate-100 font-medium">
+                    <div className="px-4 sm:px-6 pb-4 sm:pb-6 text-sm sm:text-base text-slate-600 leading-relaxed text-balance border-t border-slate-100 font-medium whitespace-pre-line">
                         {item.answer}
                     </div>
                 </details>

@@ -85,15 +85,15 @@ export default function Header() {
                     {/* Actions */}
                     <div className="hidden lg:flex items-center gap-4">
                         <a
-                            href="tel:+916289056302"
+                            href="tel:+919641517945"
                             className={`flex items-center gap-2 font-semibold text-sm transition-colors ${isScrolled ? "text-slate-700 hover:text-emerald-600" : "text-white hover:text-emerald-300"
                                 }`}
                         >
                             <Phone className="w-4 h-4" />
-                            +91 6289 056 302
+                            +91 96415 17945
                         </a>
                         <a
-                            href="https://wa.me/916289056302?text=Hello,%20I%20am%20interested%20in%20a%20Sundarban%20Tour."
+                            href="https://wa.me/919641517945?text=Hello,%20I%20am%20interested%20in%20a%20Sundarban%20Tour."
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2.5 rounded-full font-medium text-sm shadow-[0_0_15px_rgba(16,185,129,0.3)] hover:shadow-[0_0_25px_rgba(16,185,129,0.6)] btn-premium"
@@ -171,16 +171,16 @@ export default function Header() {
                         }`}>
                         <div className="h-px w-12 bg-emerald-500 mb-2" />
                         <a
-                            href="tel:+916289056302"
+                            href="tel:+919641517945"
                             className="flex items-center gap-3 font-semibold text-slate-300 text-lg hover:text-emerald-400 transition-colors"
                         >
                             <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
                                 <Phone className="w-5 h-5" />
                             </div>
-                            +91 6289 056 302
+                            +91 96415 17945
                         </a>
                         <a
-                            href="https://wa.me/916289056302?text=Hello,%20I%20am%20interested%20in%20a%20Sundarban%20Tour."
+                            href="https://wa.me/919641517945?text=Hello,%20I%20am%20interested%20in%20a%20Sundarban%20Tour."
                             target="_blank"
                             rel="noopener noreferrer"
                             className="mt-4 bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-center py-4 rounded-xl font-bold btn-premium shadow-[0_0_15px_rgba(16,185,129,0.4)]"

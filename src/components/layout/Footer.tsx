@@ -65,11 +65,11 @@ export default function Footer() {
                         <ul className="flex flex-col gap-4 text-sm text-emerald-200/90">
                             <li className="flex items-start gap-3">
                                 <MapPin className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
-                                <span>Rangabelia, Gosaba, South 24 Paraganas, West Bengal 743370</span>
+                                <span>Village: Birajnagar, Post Office: Bijoynagar, Dist: South 24 Pgs, Near By- Bijoynagar Adarsha Vidyamandir (H.S), Pin - 743370, West Bengal, India. <br /> Regd. Address:- Birajnagar, South 24 Paraganas, West Bengal-743370, Gosaba, India, 743370</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone className="w-5 h-5 text-emerald-500 shrink-0" />
-                                <a href="tel:+916289056302" className="hover:text-emerald-400 transition-colors">+91 6289 056 302</a>
+                                <a href="tel:+919641517945" className="hover:text-emerald-400 transition-colors">+91 96415 17945</a>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-emerald-500 shrink-0" />

@@ -10,7 +10,7 @@ interface TourCardProps {
 export default function TourCard({ pkg }: TourCardProps) {
     // WhatsApp pre-fill message
     const whatsappMsg = encodeURIComponent(`Hello, I am interested in the ${pkg.title} package.`);
-    const whatsappUrl = `https://wa.me/916289056302?text=${whatsappMsg}`;
+    const whatsappUrl = `https://wa.me/919641517945?text=${whatsappMsg}`;
 
     return (
         <div className="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 hover:shadow-2xl transition-all duration-300 group flex flex-col h-full">
